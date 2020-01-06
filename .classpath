@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/jars/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/jars/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/jars/xmlschema-core-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/jsp-api-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/xml-resolver-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/jaxws-api-2.2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/eclipse-workspace/wsc-20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/eclipse-workspace/servlet-api-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/jars/json.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/apache-freemarker-2.3.26/apache-freemarker-2.3.26-incubating-bin/freemarker.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/jar/commons-net-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/jar/jsch-0.1.50.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/jar/activemq-all-5.13.3.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/18OCT/ShedularTest/WebContent/WEB-INF/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/18OCT/ShedularTest/WebContent/WEB-INF/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/18OCT/ShedularTest/WebContent/WEB-INF/lib/quartz-2.1.5.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/18OCT/ShedularTest/WebContent/WEB-INF/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/jar/core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/jar/javase-3.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/jar/mongo-java-driver-2.11.3.jar"/>
+	<classpathentry kind="lib" path="D:/MQ/project_mongodb/06_12_17/06_12_17/enterprise_jar/enterprise30APR18.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

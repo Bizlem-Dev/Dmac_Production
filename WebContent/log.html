@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+
+
+	 <script type="text/javascript">
+	 $(document).ready(function() {
+		    $('#example').DataTable( {
+		        "processing": true,
+		       
+		        "ajax": {
+		            "url": "MongoData",
+		            "type": "GET"
+		        },
+		        "columns": [
+		            { "data": "MessageID" },
+		            { "data": "Request" },
+		            { "data": "Source" },
+		            { "data": "Request_Time" },
+		            { "data": "Destination" },
+		            { "data": "Response" },
+		            { "data": "Response_Time" },
+		            { "data": "Status" }
+		        ],
+		        
+	             
+		    } );
+		} );
+
+</script>
+
+
+
+
+</head>
+<body>
+
+<table id="example" class="display" cellspacing="0" >
+        <thead>
+            <tr>
+                <th style="width:10%">MessageID</th>
+                <th style="width:10%">Request</th>
+                <th style="width:10%">Source</th>
+                <th style="width:10%">Request_Time</th>
+                <th style="width:10%">Destination</th>
+                <th style="width:10%">Response</th>
+                <th style="width:10%">Response_Time</th>
+                <th style="width:10%">Status</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th style="width:10%">MessageID</th>
+                <th style="width:10%">Request</th>
+                <th style="width:10%">Source</th>
+                <th style="width:10%">Request_Time</th>
+                <th style="width:10%">Destination</th>
+                <th style="width:10%">Response</th>
+                <th style="width:10%">Response_Time</th>
+                <th style="width:10%">Status</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from COCDService WSDL service -->
+
+  <service name="COCD" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://action.com"/>
+      <parameter name="wsdlServiceElement" value="COCDService"/>
+      <parameter name="schemaQualified" value="http://action.com"/>
+      <parameter name="wsdlServicePort" value="COCD"/>
+      <parameter name="className" value="com.action.COCDSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="COCD"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="main" qname="operNS:main" xmlns:operNS="http://action.com" soapAction="" >
+        <parameter qname="pns:args" xmlns:pns="http://action.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getCurrentPaymentPlanDetail" qname="operNS:getCurrentPaymentPlanDetail" xmlns:operNS="http://action.com" returnQName="retNS:getCurrentPaymentPlanDetailReturn" xmlns:retNS="http://action.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:P_REQUEST_nUMBER" xmlns:pns="http://action.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:P_REQUEST_NAME" xmlns:pns="http://action.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:P_SOURCE_MESSAGE" xmlns:pns="http://action.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:REGISTERATION_ID" xmlns:pns="http://action.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="getCurrentPaymentPlanDetail main"/>
+
+  </service>
+</deployment>
